@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GizmosLibrary
+namespace GizmosLibraryPlugin
 {
     public static class GLDraw
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GizmosLibrary
+namespace GizmosLibraryPlugin
 {
     //From https://math.stackexchange.com/questions/511370/how-to-rotate-one-vector-about-another
     public static class Vector3MathUtils

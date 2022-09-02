@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GizmosLibrary
+namespace GizmosLibraryPlugin
 {
     public static class GLHelper
     {
@@ -57,11 +57,23 @@ namespace GizmosLibrary
             GLDraw.Vector(Vector3.forward, headSize, offset, color);
             GLDraw.Vector(Vector3.right, headSize, offset, color);
         }
+        public static void DrawAxis(float headSize, Color upColor, Color fowardColor, Color rightColor, Vector3 offset)
+        {
+            GLDraw.Vector(Vector3.up, headSize, offset, upColor);
+            GLDraw.Vector(Vector3.forward, headSize, offset, fowardColor);
+            GLDraw.Vector(Vector3.right, headSize, offset, rightColor);
+        }
         public static void DrawTransform(Transform transform, float headSize, Color color)
         {
             GLDraw.Vector(transform.up * transform.lossyScale.x, headSize, transform.position, color);
             GLDraw.Vector(transform.forward * transform.lossyScale.z, headSize, transform.position, color);
             GLDraw.Vector(transform.right * transform.lossyScale.y, headSize, transform.position, color);
+        }
+        public static void DrawTransform(Transform transform, float headSize, Color upColor, Color fowardColor, Color rightColor)
+        {
+            GLDraw.Vector(transform.up * transform.lossyScale.x, headSize, transform.position, upColor);
+            GLDraw.Vector(transform.forward * transform.lossyScale.z, headSize, transform.position, fowardColor);
+            GLDraw.Vector(transform.right * transform.lossyScale.y, headSize, transform.position, rightColor);
         }
         public static void DrawColliderBoundingBox(Collider collider, Color color)
         {
