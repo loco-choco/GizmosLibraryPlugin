@@ -1,1 +1,1 @@
-This is a BepInEx plugin version of the owml library [GizmosLibrary](https://github.com/ShoosGun/GizmosLibrary), which means it has some helpers like drawing Shapes (a class simmilar to colliders that exist in Outer Wilds) not present.
+This is a BepInEx plugin version of the owml library [GizmosLibrary](https://github.com/ShoosGun/GizmosLibrary), which means it has some helpers like drawing Shapes (which is a class in Outer Wilds that are simmilar to regular colliders) not present.
